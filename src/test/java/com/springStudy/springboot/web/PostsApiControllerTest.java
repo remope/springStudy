@@ -48,7 +48,7 @@ public class PostsApiControllerTest {
                 builder()
                 .title(title)
                 .content(content)
-                .auther("auther")
+                .author("author")
                 .build();
 
         String url = "http://localhost:" + port + "/api/v1/posts";
@@ -72,7 +72,7 @@ public class PostsApiControllerTest {
         Posts savePosts = postsRepository.save(Posts.builder()
                 .title("title")
                 .content("content")
-                .auther("auther")
+                .author("author")
                 .build());
 
         Long updateId = savePosts.getId();
